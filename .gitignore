@@ -5,7 +5,10 @@
 .env.staging
 .env.development
 .env.test
-*.env
+
+# Keep template files
+!.env.example
+!.env.template
 
 # API keys and credentials
 config/secrets.json
