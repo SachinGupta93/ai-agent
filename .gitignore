@@ -1,41 +1,202 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+.env.test
+*.env
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
+# API keys and credentials
+config/secrets.json
+config/credentials.json
+*.key
 *.pem
+*.p12
+*.pfx
 
-# debug
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+conda-env/
+.conda/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+target/
+out/
+
+# Next.js
+.next/
+.vercel/
+next-env.d.ts
+
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
 
-# vercel
-.vercel
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+.cache/
+
+# AI model files and data
+models/
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.h5
+*.pkl
+*.pickle
+checkpoints/
+fine_tuned_models/
+model_cache/
+
+# Training data and datasets
+data/training/
+data/datasets/
+data/raw/
+data/processed/
+*.csv
+*.json.gz
+*.parquet
+
+# Uploaded files
+uploads/
+user_files/
+documents/
+images/
+audio/
+video/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Memory and session files
+memory/
+sessions/
+conversation_history/
+user_preferences.json
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# PyTorch
+*.pth
+*.pt
+
+# TensorFlow
+*.pb
+saved_model/
+variables/
+
+# Hugging Face
+.cache/huggingface/
+transformers_cache/
+
+# Docker
+.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+
+# Cloud deployment
+.gcloud/
+.aws/
+.azure/
+
+# Monitoring and analytics
+wandb/
+tensorboard_logs/
+mlruns/
+
+# Test files
+test_results/
+test_outputs/
+*.test.js
+*.test.ts
+*.test.py
+
+# Backup files
+*.bak
+*.backup
+*.old
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Package manager lock files (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Local configuration overrides
+config/local.json
+config/development.json
+config/production.json

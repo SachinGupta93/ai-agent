@@ -1,0 +1,105 @@
+# Core AI and ML libraries
+torch>=2.0.0
+transformers>=4.35.0
+accelerate>=0.24.0
+peft>=0.6.0
+bitsandbytes>=0.41.0
+datasets>=2.14.0
+evaluate>=0.4.0
+
+# LangChain and LangGraph
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-anthropic>=0.1.0
+langchain-google-genai>=0.0.6
+langchain-community>=0.0.10
+langgraph>=0.0.20
+
+# API clients
+openai>=1.3.0
+anthropic>=0.8.0
+google-generativeai>=0.3.0
+huggingface-hub>=0.19.0
+
+# Multimodal processing
+Pillow>=10.0.0
+opencv-python>=4.8.0
+librosa>=0.10.0
+soundfile>=0.12.0
+speech-recognition>=3.10.0
+gtts>=2.4.0
+pygame>=2.5.0
+
+# Web tools and scraping
+requests>=2.31.0
+aiohttp>=3.9.0
+beautifulsoup4>=4.12.0
+PyPDF2>=3.0.0
+python-docx>=1.1.0
+duckduckgo-search>=3.9.0
+
+# Language detection and translation
+langdetect>=1.0.9
+googletrans>=4.0.0
+
+# Telegram bot
+python-telegram-bot>=20.7
+
+# WhatsApp integration (optional)
+# twilio>=8.10.0
+
+# Voice processing
+pyaudio>=0.2.11
+webrtcvad>=2.0.10
+
+# Data processing
+pandas>=2.1.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Web framework (for API)
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.5.0
+
+# Database (optional)
+sqlite3
+sqlalchemy>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+tqdm>=4.66.0
+rich>=13.7.0
+typer>=0.9.0
+
+# Development and testing
+pytest>=7.4.0
+black>=23.11.0
+flake8>=6.1.0
+mypy>=1.7.0
+
+# Deployment
+gunicorn>=21.2.0
+docker>=6.1.0
+
+# Cloud platforms
+gradio>=4.8.0
+streamlit>=1.28.0
+
+# Monitoring and logging
+wandb>=0.16.0
+tensorboard>=2.15.0
+
+# Security
+cryptography>=41.0.0
+python-jose>=3.3.0
+
+# Performance
+redis>=5.0.0
+celery>=5.3.0
+
+# Optional: For advanced features
+# jupyter>=1.0.0
+# notebook>=7.0.0
+# ipywidgets>=8.1.0
