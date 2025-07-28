@@ -7,8 +7,8 @@
 .env.test
 
 # Keep template files
-!.env.example
-!.env.template
+.env.example
+.env.template
 
 # API keys and credentials
 config/secrets.json
